@@ -1,5 +1,5 @@
 namespace py geocode
 
 service GeocodeAddress {
-  int multiply(1:int n1, 2:int n2),
+  i32 multiply(1:i32 n1, 2:i32 n2),
 }
