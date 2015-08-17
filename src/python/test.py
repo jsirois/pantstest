@@ -1,3 +1,7 @@
-from geocode import GeocodeAddress
+from pprint import pprint
 
-print GeocodeAddress
+from foo.C.ttypes import CStruct
+
+if __name__ == "__main__":
+    c = CStruct()
+    pprint([name for name in dir(c) if not name.startswith('__')])

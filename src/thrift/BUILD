@@ -1,6 +1,24 @@
 python_thrift_library(
-    name='test',
+    name='A',
     sources=[
-        'test.thrift',
+        'A.thrift',
+    ],
+    dependencies=[
+        ':B',
+        ':C',
+    ]
+)
+
+python_thrift_library(
+    name='B',
+    sources=[
+        'B.thrift',
+    ]
+)
+
+python_thrift_library(
+    name='C',
+    sources=[
+        'C.thrift',
     ]
 )
