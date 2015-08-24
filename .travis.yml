@@ -4,5 +4,12 @@
 # cache configured below.
 sudo: false
 
-script: ./test.sh
+language: python
+
+python:
+  - "2.7"
+
+script: |
+  python --version
+  ./test.sh
 
