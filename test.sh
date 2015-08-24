@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function run_test() {
-  ./pants -q binary src/python:test && dist/test.pex
+  ./pants binary src/python:test 1>&2 && dist/test.pex
 }
 
 function apply_change() {
