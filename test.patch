@@ -1,0 +1,17 @@
+diff --git a/src/thrift/C.thrift b/src/thrift/C.thrift
+index 9ce83a5..ab77e7c 100644
+--- a/src/thrift/C.thrift
++++ b/src/thrift/C.thrift
+@@ -2,9 +2,9 @@ namespace py foo.C
+ 
+ struct CStruct {
+     1: optional double C
+-    /* 2: optional double Cfoo */
+-    /* 3: optional double Cfoobar */
+-    /* 4: optional double Cba */
++    2: optional double Cfoo
++    3: optional double Cfoobar
++    4: optional double Cba
+ }
+ 
+ enum CEnum {
